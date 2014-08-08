@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Teamfora</title>   
     
-    <script src="bootstrap.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -34,11 +34,23 @@
                 <a href="/">Пользователи</a>
             </li>
             
-            <li class="empty">
+            <li class="empty dropdown">
                 <a href="/">
                     <img class="principal-avatar" src="/imgs/avatar-32.png"> 
                     <span>Мухов Кирилл &#9660;</span>
                 </a>
+
+                <ul>
+                    <li>
+                        <a>
+                            <div class="icon16 profile"></div>
+                            <span>Профиль</span>
+                        </a>
+                    </li>    
+                    <li><a><div class="icon16 settings"></div>Настройки</a></li>
+                    <li class="separator"></li>    
+                    <li><a><div class="icon16 exit"></div>Выход</a></li>    
+                </ul>
             </li>        
             <li class="icon">
                 <div class="icon16 task"></div>
@@ -52,5 +64,6 @@
 
     </div>
 
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>
