@@ -9,8 +9,7 @@ body {
 }
 
 #content {
-	width: 1024px;
-	margin: 0 auto;
+	width: 100%;	
 }
 
 .black {
@@ -21,23 +20,102 @@ body {
 	color: #51a351;
 }
 
-div.nav {
+.pull-right {
+	float: right;
+}
 
+.clearfix {
+	padding: 0px;
+	margin: 0px;
+	clear: both;
 }
-div.nav ul.menu, div.nav ul.principal {
+
+.icon16 {
+	width: 16px;
+	height: 16px;
+}
+
+.mail {
+	background: url('/imgs/mail.png');
+}
+
+.task {
+	background: url('/imgs/task.png');
+}
+
+sup.count {
+	position: relative;
+	top: -20px;
+	left: 16px;
+}
+
+.red {
+	background: #b94a48;
+	padding: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 9px;
+	color: #fff;
+}
+
+.orange {
+	background: #f89406;
+	padding: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 9px;
+	color: #fff;	
+}
+
+ul.nav {	
+	border-bottom: 1px solid #eee;
 	list-style-type: none;
+	height: 45px;
+	clear: both;
+	box-shadow: 0px 1px #e5ffec;
 }
-div.nav ul.menu li {
+ul.nav li {
 	float: left;
-	padding: 10px;
-	margin-top: 5px;
+	padding: 12px;
+	border-right: 1px solid #eee;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
 }
-div.nav ul.menu li a {
+ul.nav li.item:hover {
+	background-color: #f1f1f1;
+}
+ul.nav li a {
 	text-decoration: none;
+	color: #666;
 }
-div.nav ul.menu li.brand {
-	margin-right: 10px;
-	margin-top: 0px;
+ul.nav li.brand {
+	padding-right: 100px;
+}
+ul.nav li.brand a {
+	letter-spacing: 1px;
 	font-weight: bold;
-	font-size: 20px;
+}
+ul.nav li.empty {
+	border: none;
+	float: right;		
+	padding: 12px;		
+}
+ul.nav li.empty img.principal-avatar {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+ul.nav li.empty span {
+	padding-bottom: 4px;
+}
+ul.nav li.empty:hover {
+	background-color: #f1f1f1;
+}
+ul.nav li.icon {
+	border: none;
+	float: right;
+	padding: 0px;	
+	padding-top: 15px;
+	margin-right: 18px;
 }
