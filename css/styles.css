@@ -80,6 +80,19 @@ sup.count {
 	color: #fff;	
 }
 
+.open {
+	border-left: 5px solid #f89406;
+}
+.start {
+	border-left: 5px solid #3a87ad;
+}
+.resolved {
+	border-left: 5px solid #080;
+}
+.closed {
+	border-left: 5px solid #eee;
+}
+
 li.separator {
 	padding: 0px !important;
 	margin: 0px !important;
@@ -149,6 +162,7 @@ ul.nav li.icon {
 	border-top: 1px solid #fff;
 	background-color: #fff;
 	box-shadow: 2px 2px 2px #e5ffec; 
+	display: none;
 }
 ul.dropdown > li {
 	float: none;
@@ -165,4 +179,110 @@ ul.dropdown > li > a {
 ul.dropdown > li:hover {
 	background-color: #f1f1f1;
 	cursor: pointer;
+}
+
+ul.dd_messages {
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	top: 45px;
+	right: 200px;
+	border: 1px solid #eee;
+	border-top: 1px solid #fff;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #e5ffec;
+	display: none;
+}
+ul.dd_messages > li {
+	width: 320px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+ul.dd_messages > li:hover {
+	background-color: #f1f1f1;
+	cursor: pointer;
+}
+ul.dd_messages > li > div.avatar {
+	width: 32px;
+	height: 32px;
+	margin-top: 2px;
+	background: url('/imgs/user_avatar.png');
+	float: left;
+}
+ul.dd_messages > li > div.item {
+	margin-left: 38px;
+}
+ul.dd_messages > li > div.item > p {
+	color: #666;
+	font-size: 12px;
+}
+ul.dd_messages > li > div.item > p.content {
+	max-height: 64px;
+	overflow: hidden;
+}
+ul.dd_messages > li > div.item > p.datetime {
+	padding-top: 5px;
+	color: #999;
+	font-size: 10px;
+}
+ul.dd_messages > li.paging {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+	border: none;
+}
+
+ul.dd_tasks {
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	top: 45px;
+	right: 160px;
+	border: 1px solid #eee;
+	border-top: 1px solid #fff;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #e5ffec;
+	display: none;
+}
+ul.dd_tasks > li {
+	width: 320px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+ul.dd_tasks > li:hover {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+ul.dd_tasks > li > div.item {
+	padding-left: 5px;
+}
+ul.dd_tasks > li > div.item > p {
+	color: #666;
+	font-size: 12px;
+}
+ul.dd_tasks > li > div.item > p > a {
+	color: #51a351;
+	text-decoration: underline;
+}
+ul.dd_tasks > li > div.item > p > a:hover {
+	color: #080;
+}
+ul.dd_tasks > li > div.item > p.datetime {
+	padding-top: 5px;
+	color: #999;
+	font-size: 10px;
+}
+ul.dd_tasks > li.paging {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+	border: none;
 }
