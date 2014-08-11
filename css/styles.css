@@ -117,7 +117,7 @@ li.separator {
 }
 .charts > .shift > .chart > span {
 	position: relative;
-	top: -50px;
+	top: -48px;
 	left: 70px;
 	font-weight: bold;
 	color: #777;
