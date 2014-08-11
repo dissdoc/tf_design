@@ -4,7 +4,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Teamfora</title>   
     
-    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easypiechart.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -148,6 +149,56 @@
                 <span class="icon16 mail">Все сообщения</span>
             </li>
         </ul>
+
+        <div class="layout">
+            <div class="layout70 pull-left">
+               cz 
+            </div>
+            <div class="layout30 pull-left">
+                <div class="panel">
+                    <h3>Статистика по задачам</h3>
+                    <span class="smalltext">Отображается статистика по вашим задачам</span>
+
+                    <div class="charts">
+                        <div class="shift pull-left">
+                            <div class="chart chart-open" data-percent="73">
+                                <span>73</span>
+                            </div>                            
+                            <h6>Открыто</h6>
+                        </div>
+                        <div class="shift pull-left">
+                            <div class="chart chart-start" data-percent="14">
+                                <span>14</span>
+                            </div>         
+                            <h6>Запущено</h6>
+                        </div>
+                        <div class="shift pull-left">
+                            <div class="chart chart-resolved" data-percent="46">
+                                <span>46</span>
+                            </div> 
+                            <h6>Утверждено</h6>
+                        </div>
+                        <div class="shift pull-left">
+                            <div class="chart chart-closed" data-percent="7">
+                                <span>7</span>
+                            </div> 
+                            <h6>Закрыто</h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+
+        <div class="layout layout30 pull-left">
+            left
+        </div>
+        <div class="layout layout70 pull-left">
+            right
+        </div>
+        <div class="clearfix"></div>
 
     </div>
 

@@ -90,3 +90,33 @@ $(function() {
 	});
 
 });
+
+// CHARTS
+$(function() {
+    $('.chart-open').easyPieChart({
+        barColor: '#f89406',
+        trackColor: '#f1f1f1',
+        size: 105
+    });
+});
+$(function() {
+    $('.chart-start').easyPieChart({
+        barColor: '#3a87ad',
+        trackColor: '#f1f1f1',
+        size: 105
+    });
+});
+$(function() {
+    $('.chart-resolved').easyPieChart({
+        barColor: '#080',
+        trackColor: '#f1f1f1',
+        size: 105
+    });
+});
+$(function() {
+    $('.chart-closed').easyPieChart({
+        barColor: '#ccc',
+        trackColor: '#f1f1f1',
+        size: 105
+    });
+});
