@@ -88,6 +88,41 @@ sup.count {
 	color: #fff;	
 }
 
+
+span.open-task {
+	background: #fedbaa;
+	color: #a66304;
+	padding: 2px;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;	
+}
+span.start-task {
+	background: #98c2d6;
+	color: #07547a;
+	padding: 2px;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;	
+}
+span.resolved-task {
+	background: #b0e5b0;
+	color: #006000;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;	
+	padding: 2px;
+}
+span.closed-task {
+	background: #ddd;
+	color: #444;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;	
+	padding: 2px;	
+}
+
+
 .open {
 	border-left: 5px solid #f89406;
 }
@@ -127,19 +162,49 @@ li.separator {
 	content: '%'; 
 }
 
+div.paging {
+	text-align: center;
+	color: #666;
+	padding: 10px;
+}
+div.paging:hover {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+
 .panel {
 	background-color: #fff;
 	border: 1px solid #eee;
 	padding: 10px; 
 }
+
+.frame {
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 0px;
+}
+.frame > .header {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.frame > .content {
+	padding: 10px;
+	padding-bottom: 0px;
+	color: #666;
+}
+
 .shift-layout {
 	margin-right: 10px;
 }
 .layout {
 	padding: 10px;
+	padding-bottom: 0px;
 }
 .layout30 {
 	width: 30%;
+}
+.layout33 {
+	width: 33%;
 }
 .layout50 {
 	width: 50%;
@@ -384,4 +449,39 @@ div.dd_tasks > div.paging {
 div.dd_tasks > div.paging:hover {
 	cursor: pointer;
 	background-color: #f1f1f1;
+}
+
+ul.project-activity {
+	list-style-type: none;
+}
+ul.project-activity > li {
+	padding: 5px;
+	border-bottom: 1px solid #eee;
+}
+ul.project-activity > li > div.avatar {
+	float: left;
+	padding-top: 2px;
+}
+ul.project-activity > li > div.message {
+	margin-left: 36px;
+}
+ul.project-activity > li > div.message > p.datetime {
+	padding-top: 5px;
+	color: #999;
+	font-size: 10px;
+}
+ul.project-activity > li > div.message > p.action a {
+	color: #51a351;
+	text-decoration: underline;
+} 
+ul.project-activity > li > div.message > p.action a:hover {
+	color: #080;
+} 
+ul.project-activity > li > div.message > p.description {
+	background-color: #f1f1f1;
+	border: 1px solid #ddd;
+	margin-top: 2px;
+	padding: 5px;
+	font-size: 11px;
+	color: #666;
 }
