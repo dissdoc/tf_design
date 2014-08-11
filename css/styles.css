@@ -185,7 +185,6 @@ ul.nav {
 ul.nav > li {
 	float: left;
 	padding: 12px;
-	border-right: 1px solid #eee;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	cursor: pointer;
@@ -258,8 +257,7 @@ ul.dropdown > li:hover {
 	cursor: pointer;
 }
 
-ul.dd_messages {
-	list-style-type: none;
+div.dd_messages {
 	margin: 0;
 	padding: 5px;
 	position: absolute;
@@ -272,41 +270,47 @@ ul.dd_messages {
 	display: none;
 	z-index: 9999;
 }
-ul.dd_messages > li {
+div.dd_messages > ul {
+	list-style-type: none;
+	overflow: auto;
+	max-height: 240px;
+	width: 330px;
+}
+div.dd_messages > ul > li {
 	width: 320px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	border-bottom: 1px solid #eee;
 	background-color: #fff;
 }
-ul.dd_messages > li:hover {
+div.dd_messages > ul > li:hover {
 	background-color: #f1f1f1;
 	cursor: pointer;
 }
-ul.dd_messages > li > div.avatar {
+div.dd_messages > ul > li > div.avatar {
 	width: 32px;
 	height: 32px;
 	margin-top: 2px;
 	background: url('/imgs/user_avatar.png');
 	float: left;
 }
-ul.dd_messages > li > div.item {
+div.dd_messages > ul > li > div.item {
 	margin-left: 38px;
 }
-ul.dd_messages > li > div.item > p {
+div.dd_messages > ul > li > div.item > p {
 	color: #666;
 	font-size: 12px;
 }
-ul.dd_messages > li > div.item > p.content {
+div.dd_messages > ul > li > div.item > p.content {
 	max-height: 64px;
 	overflow: hidden;
 }
-ul.dd_messages > li > div.item > p.datetime {
+div.dd_messages > ul > li > div.item > p.datetime {
 	padding-top: 5px;
 	color: #999;
 	font-size: 10px;
 }
-ul.dd_messages > li.paging {
+div.dd_messages > div.paging {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -314,9 +318,12 @@ ul.dd_messages > li.paging {
 	color: #666;
 	border: none;
 }
+div.dd_messages > div.paging:hover {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
 
-ul.dd_tasks {
-	list-style-type: none;
+div.dd_tasks {
 	margin: 0;
 	padding: 5px;
 	position: absolute;
@@ -329,41 +336,52 @@ ul.dd_tasks {
 	display: none;
 	z-index: 9999;
 }
-ul.dd_tasks > li {
+ 
+div.dd_tasks > ul {
+	list-style-type: none;	
+	overflow: auto;
+	max-height: 240px;
+	width: 330px;
+}
+div.dd_tasks > ul > li {
 	width: 320px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	border-bottom: 1px solid #eee;
 	background-color: #fff;
 }
-ul.dd_tasks > li:hover {
+div.dd_tasks > ul > li:hover {
 	cursor: pointer;
 	background-color: #f1f1f1;
 }
-ul.dd_tasks > li > div.item {
+div.dd_tasks > ul > li > div.item {
 	padding-left: 5px;
 }
-ul.dd_tasks > li > div.item > p {
+div.dd_tasks > ul > li > div.item > p {
 	color: #666;
 	font-size: 12px;
 }
-ul.dd_tasks > li > div.item > p > a {
+div.dd_tasks > ul > li > div.item > p > a {
 	color: #51a351;
 	text-decoration: underline;
 }
-ul.dd_tasks > li > div.item > p > a:hover {
+div.dd_tasks > ul > li > div.item > p > a:hover {
 	color: #080;
 }
-ul.dd_tasks > li > div.item > p.datetime {
+div.dd_tasks > ul > li > div.item > p.datetime {
 	padding-top: 5px;
 	color: #999;
 	font-size: 10px;
 }
-ul.dd_tasks > li.paging {
+div.dd_tasks > div.paging {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
 	font-weight: bold;
 	color: #666;
 	border: none;
+}
+div.dd_tasks > div.paging:hover {
+	cursor: pointer;
+	background-color: #f1f1f1;
 }
