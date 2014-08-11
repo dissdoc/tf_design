@@ -91,6 +91,41 @@ $(function() {
 
 });
 
+// FLOT
+$(function() {
+
+	var activities = [
+		{color: 3, data: [
+			[1395518400000, 0], 
+			[1395691200000, 10], 
+			[1395950400000,70],
+			[1396382400000, 30],
+			[1396814400000, 8],
+			[1396987200000, 15]
+		]}
+	];
+
+	var plot_conf = {
+		series: {
+			lines: { 
+	    		show: true,
+	    		lineWidth: 2 
+	   		}
+	 	},
+	 	grid: { 
+           borderWidth: {top: 1, right: 1, bottom: 1, left: 1},
+           borderColor: {top: "#eee", right: "#eee",  bottom: "#eee", left: "#eee"} 
+        },
+        xaxis: {
+   			mode: "time",
+   			timeformat: "%b %d",
+ 		}
+	};
+
+	$.plot($("div.graph-activity"), activities, plot_conf);
+
+});
+
 // CHARTS
 $(function() {
     $('.chart-open').easyPieChart({
@@ -98,22 +133,19 @@ $(function() {
         trackColor: '#f8e4c6',
         size: 105
     });
-});
-$(function() {
+
     $('.chart-start').easyPieChart({
         barColor: '#3a87ad',
         trackColor: '#dee7ec',
         size: 105
     });
-});
-$(function() {
+
     $('.chart-resolved').easyPieChart({
         barColor: '#080',
         trackColor: '#ddf6dd',
         size: 105
     });
-});
-$(function() {
+
     $('.chart-closed').easyPieChart({
         barColor: '#bbb',
         trackColor: '#f1f1f1',

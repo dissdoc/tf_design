@@ -132,6 +132,9 @@ li.separator {
 	border: 1px solid #eee;
 	padding: 10px; 
 }
+.shift-layout {
+	margin-right: 10px;
+}
 .layout {
 	padding: 10px;
 }
@@ -158,6 +161,12 @@ h6 {
 	color: #666;
 	font-weight: bold;
 	font-size: 11px;
+}
+
+div.graph-activity {
+	width: 100%;
+	height: 143px;
+	margin-top: 5px;
 }
 
 ul {
