@@ -80,6 +80,23 @@ button {
 	color: #444;
 	padding: 2px;
 }
+button.small {
+	padding: 2px;
+	font-size: 11px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+button.medium {
+
+}
+button.large {
+
+}
+button.agree {
+	border: 1px solid #4cb64c;
+	background-image: linear-gradient(to bottom,#62be62 0,#4cb64c 100%);
+	color: #fff;
+}
 
 .red {
 	background: #b94a48;
@@ -534,11 +551,6 @@ ul.social-activity > li > div.message > p.description {
 ul.social-activity > li > div.message > p.buttons {
 	margin-top: 4px;
 	text-align: right;
-}
-ul.social-activity > li > div.message > p.buttons > button {
-	font-size: 11px;
-	padding-left: 2px;
-	padding-right: 2px;
 }
 
 ul.prof-activity {
