@@ -43,6 +43,11 @@ body {
 	height: 16px;
 	padding-left: 20px;
 }
+.icon16-empty {
+	width: 16px;
+	height: 16px;
+	padding-left: 3px;
+}
 
 .mail {
 	background: url('/imgs/mail.png') no-repeat;
@@ -61,6 +66,12 @@ body {
 }
 .alarm {
 	background: url('/imgs/alarm.png') no-repeat;
+}
+.comment {
+	background: url('/imgs/comment.png') no-repeat;
+}
+.project {
+	background: url('/imgs/project.png') no-repeat;
 }
 
 sup.count {
