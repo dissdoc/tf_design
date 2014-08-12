@@ -47,21 +47,20 @@ body {
 .mail {
 	background: url('/imgs/mail.png') no-repeat;
 }
-
 .task {
 	background: url('/imgs/task.png') no-repeat;
 }
-
 .profile {
 	background: url('/imgs/profile.png') no-repeat;
 }
-
 .settings {
 	background: url('/imgs/settings.png') no-repeat;
 }
-
 .exit {
 	background: url('/imgs/exit.png') no-repeat;
+}
+.alarm {
+	background: url('/imgs/alarm.png') no-repeat;
 }
 
 sup.count {
@@ -106,9 +105,16 @@ button.agree {
 	font-size: 9px;
 	color: #fff;
 }
-
 .orange {
 	background: #f89406;
+	padding: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 9px;
+	color: #fff;	
+}
+.green {
+	background: #080;
 	padding: 2px;
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -416,6 +422,50 @@ div.dd_messages > div.paging:hover {
 	background-color: #f1f1f1;
 }
 
+div.dd_alarms {
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	top: 45px;
+	right: 230px;
+	border: 1px solid #eee;
+	border-top: 1px solid #fff;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #e5ffec;
+	z-index: 9999;	
+	display: none;
+}
+div.dd_alarms > ul {
+	list-style-type: none;	
+	overflow: auto;
+	max-height: 240px;
+	width: 336px;	
+}
+div.dd_alarms > ul > li {
+	width: 320px;
+	padding: 3px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+}
+div.dd_alarms > ul > li:hover {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+div.dd_alarms > ul > li > a {
+	color: #51a351;
+	text-decoration: underline;
+}
+div.dd_alarms > ul > li > a:hover {
+	color: #080;
+}
+div.dd_alarms > ul > li > p.datetime {
+	padding-top: 5px;
+	color: #999;
+	font-size: 10px;
+}
+
 div.dd_tasks {
 	margin: 0;
 	padding: 5px;
@@ -429,7 +479,6 @@ div.dd_tasks {
 	display: none;
 	z-index: 9999;
 }
- 
 div.dd_tasks > ul {
 	list-style-type: none;	
 	overflow: auto;

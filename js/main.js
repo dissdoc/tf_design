@@ -7,6 +7,7 @@ $(function() {
 	$('li.empty').click(function() {
 		$('div.dd_messages').hide();
 		$('div.dd_tasks').hide();
+		$('div.dd_alarms').hide();
 
 		var dropdown = $('ul.dropdown');
 		dropdown.show();
@@ -38,6 +39,7 @@ $(function() {
 	$('li.messages').click(function() {
 		$('ul.dropdown').hide();
 		$('div.dd_tasks').hide();
+		$('div.dd_alarms').hide();
 
 		var dropdown = $('div.dd_messages');
 		dropdown.show();
@@ -66,9 +68,42 @@ $(function() {
 		x1 = -1, x2 = -1,
 		y1 = -1, y2 = -1;
 
+	$('li.alarms').click(function() {
+		$('ul.dropdown').hide();
+		$('div.dd_tasks').hide();
+		$('div.dd_messages').hide();
+
+		var dropdown = $('div.dd_alarms');
+		dropdown.show();
+		x1 = dropdown.position().left;
+		y1 = dropdown.position().top;
+		x2 = x1 + dropdown.width();
+		y2 = y1 + dropdown.height();
+		flag = true;
+		return false;
+	});
+
+	$(document).click(function(event) {
+		if (flag) {
+			if (!(event.pageX >= x1 && event.pageX <= x2 && event.pageY >= y1 && event.pageY <= y2)) { 
+				$('div.dd_alarms').hide();
+				flag = false;
+			}
+		}
+	});
+
+});
+
+$(function() {
+
+	var flag = false,
+		x1 = -1, x2 = -1,
+		y1 = -1, y2 = -1;
+
 	$('li.tasks').click(function() {
 		$('ul.dropdown').hide();
 		$('div.dd_messages').hide();
+		$('div.dd_alarms').hide();
 
 		var dropdown = $('div.dd_tasks');
 		dropdown.show();
