@@ -157,7 +157,9 @@ $(function() {
  		}
 	};
 
-	$.plot($("div.graph-activity"), activities, plot_conf);
+	// Проверку поставил для обхода ошибки в макете
+	if ($("div.graph-activity").length > 0)
+		$.plot($("div.graph-activity"), activities, plot_conf);
 
 });
 
@@ -186,4 +188,13 @@ $(function() {
         trackColor: '#f1f1f1',
         size: 105
     });
+});
+
+// POPUP 
+$(function() {
+	$('ul.persons > li > img').mouseenter(function() {
+		$(this).parent().find('div.info').show();
+	}).mouseleave(function() {
+		$(this).parent().find('div.info').hide();
+	});
 });

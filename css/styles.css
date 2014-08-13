@@ -714,13 +714,14 @@ div.persons > ul > li {
 }
 div.persons > ul > li > div.avatar {
 	float: left;
+	padding-top: 2px;
 }
 div.persons > ul > li > div.content {
 	margin-left: 68px;
 }
 div.persons > ul > li > div.content > p.name > a {
 	text-decoration: none;
-	color: #51a351;;
+	color: #51a351;
 }
 div.persons > ul > li > div.content > p.name > a:hover {
 	color: #080;
@@ -730,8 +731,15 @@ div.persons > ul > li > div.content > p.last-visit {
 	color: #999;
 	font-size: 10px;	
 }
+div.persons > ul > li > div.content > p.prof {
+	color: #777;
+	font-size: 11px;
+	margin-top: 0px;
+	min-height: 14px;
+	font-weight: bold;
+}
 div.persons > ul > li > div.content > p.skills {
-	margin-top: 14px;
+	margin-top: 2px;
 }
 div.persons > ul > li > div.content > p.skills > span {
 	background-color: #07547a; 
@@ -751,4 +759,80 @@ div.persons > ul > li > div.actions {
 }
 div.persons > ul > li > div.actions > span {
 	cursor: pointer !important;
+}
+
+div.recommend-persons > ul {
+	list-style-type: none;
+}
+div.recommend-persons > ul > li {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #eee;
+}
+div.recommend-persons > ul > li > div.item > a {
+	text-decoration: underline;
+	color: #51a351;
+}
+div.recommend-persons > ul > li > div.item > a:hover {
+	color: #080;
+}
+div.recommend-persons > ul > li > p.info {
+	margin-top: 5px;
+	margin-bottom: 3px;
+	border: 1px solid #f1f1f1;
+	background-color: #f8f8f8;
+	font-size: 11px;
+	padding: 5px;
+}
+div.recommend-persons > ul > li > ul.persons {
+	list-style-type: none;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+div.recommend-persons > ul > li > ul.persons > li {
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+div.recommend-persons > ul > li > ul.persons > li > img {
+	width: 32px;
+	height: 32px;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info {
+	position: absolute;
+	width: 320px;
+	background-color: #f8f8f8;
+	border: 1px solid #f1f1f1;
+	padding: 5px; 
+	display: none;
+	box-shadow: 0px 1px #e5ffec;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info > div.avatar {
+	float: left;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info > div.content {
+	margin-left: 68px;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info > div.content > p.name {
+	color: #080;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info > div.content > p.prof {
+	font-weight: bold;
+	font-size: 11px;
+	margin-top: 2px;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info > div.content > p.skills {
+	margin-top: 14px;
+}
+div.recommend-persons > ul > li > ul.persons > li > div.info > div.content > p.skills > span {
+	background-color: #07547a; 
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding: 3px;
+	margin: 2px;
+	margin-left: 0px;
+	font-size: 10px;	
 }
