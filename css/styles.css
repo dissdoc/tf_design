@@ -103,7 +103,10 @@ button.small {
 	padding-right: 5px;
 }
 button.medium {
-
+	padding: 2px;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 button.large {
 
@@ -270,6 +273,9 @@ div.input-field > input[type=text] {
 	padding: 10px;
 	padding-bottom: 0px;
 }
+.layout20 {
+	width: 20%;
+}
 .layout30 {
 	width: 30%;
 }
@@ -284,6 +290,9 @@ div.input-field > input[type=text] {
 }
 .layout70 {
 	width: 70%;
+}
+.layout80 {
+	width: 80%;
 }
 
 .smalltext {
@@ -842,4 +851,108 @@ div.recommend-persons > ul > li > ul.persons > li > div.info > div.content > p.s
 	margin: 2px;
 	margin-left: 0px;
 	font-size: 10px;	
+}
+
+ul.contact-messages {
+	list-style-type: none;
+}
+ul.contact-messages > li {
+	padding: 5px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px;
+}
+ul.contact-messages > li:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+ul.contact-messages > li.active {
+	background-color: #f8fff8;
+}
+ul.contact-messages > li > div.avatar {
+	float: left;
+	width: 64px;	
+}
+ul.contact-messages > li > div.content {
+	padding-left: 5px;
+	float: left;
+	max-width: 420px;
+}
+ul.contact-messages > li > div.content > p.name {
+	color: #080;
+	font-weight: bold;	
+} 
+ul.contact-messages > li > div.content > p.prof {
+	color: #999;
+	font-weight: bold;
+	margin-top: 3px;
+}
+ul.contact-messages > li > div.content > p.description {
+	margin-top: 8px;
+	color: #777;
+	font-size: 11px;
+}
+ul.contact-messages > li > div.datetime {
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	color: #777;
+	max-width: 38px;
+}
+
+ul.messages {
+	list-style-type: none;
+	margin-top: 5px;
+	border-top: 1px solid #eee;
+	padding-top: 5px;
+}
+ul.messages > li {
+	padding: 5px;
+}
+ul.messages > li:hover {
+	cursor: pointer;
+}
+ul.messages > li.newly {
+	background-color: #f8fff8;
+}
+ul.messages > li > div.avatar {
+	width: 64px;
+	height: 64px;
+	float: left;
+}
+ul.messages > li > div.content {
+	margin-left: 68px;
+}
+ul.messages > li > div.content > p.name  > a {
+	text-decoration: underline;
+	color: #51a351;
+}
+ul.messages > li > div.content > p.name > a:hover {
+	color: #080;
+}
+ul.messages > li > div.content > p.text {
+	margin-top: 5px;
+}
+ul.messages > li > div.content > p.datetime {
+	color: #999;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+div.send-message {
+	margin-top: 10px;
+	border-top: 1px solid #eee;
+	padding: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: right;
+}
+div.send-message > textarea {
+	width: 99%;
+	height: 64px;
+	border: 1px solid #eee;
+	color: #777;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 5px;
+	resize: none;
+	margin-bottom: 5px; 
 }
