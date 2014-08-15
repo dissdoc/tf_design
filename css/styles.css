@@ -109,12 +109,18 @@ button.medium {
 	padding-right: 10px;
 }
 button.large {
-
+	padding: 2px;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 button.agree {
 	border: 1px solid #4cb64c;
-	background-image: linear-gradient(to bottom,#62be62 0,#4cb64c 100%);
+	background-image: linear-gradient(to bottom,#62be62 0,#4cb64c 100%);	
 	color: #fff;
+}
+button.agree:hover {
+	background: #4cb64c;
 }
 
 .red {
@@ -931,6 +937,7 @@ ul.messages > li > div.content > p.name > a:hover {
 }
 ul.messages > li > div.content > p.text {
 	margin-top: 5px;
+	color: #777;
 }
 ul.messages > li > div.content > p.datetime {
 	color: #999;
