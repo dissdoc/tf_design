@@ -881,7 +881,6 @@ ul.contact-messages > li > div.avatar {
 ul.contact-messages > li > div.content {
 	padding-left: 5px;
 	float: left;
-	max-width: 420px;
 }
 ul.contact-messages > li > div.content > p.name {
 	color: #080;
@@ -896,6 +895,7 @@ ul.contact-messages > li > div.content > p.description {
 	margin-top: 8px;
 	color: #777;
 	font-size: 11px;
+	max-width: 220px;
 }
 ul.contact-messages > li > div.datetime {
 	float: right;
