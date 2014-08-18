@@ -435,6 +435,8 @@ ul.dropdown > li {
 	background-color: #fff;
 }
 ul.dropdown > li > a {
+	color: #777;
+	text-decoration: none;
 	width: auto;
 }
 ul.dropdown > li:hover {
