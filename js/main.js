@@ -198,3 +198,13 @@ $(function() {
 		$(this).parent().find('div.info').hide();
 	});
 });
+
+// SPARKLINES
+$(function() {
+	$("#sparkline").sparkline([5,6,7,2,0,-4,-2,4], {
+    type: 'bar',
+    height: '64px',
+    barWidth: 8,
+    barSpacing: 2,
+    zeroAxis: false});
+});
