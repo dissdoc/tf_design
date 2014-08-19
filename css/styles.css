@@ -92,9 +92,14 @@ button {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	border: 1px solid #ddd;
+	border-bottom: 1px solid #cecece;
 	background-color: #f8f8f8;
+	background-image: linear-gradient(to bottom,#f4f4f4 0,#eaeaea 100%);
 	color: #444;
 	padding: 2px;
+}
+button:hover {
+	background: #f4f4f4;
 }
 button.small {
 	padding: 2px;
@@ -109,8 +114,8 @@ button.medium {
 	padding-right: 10px;
 }
 button.large {
-	padding: 2px;
-	font-size: 14px;
+	padding: 5px;
+	font-size: 13px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -279,6 +284,9 @@ div.input-field > input[type=text] {
 	padding: 10px;
 	padding-bottom: 0px;
 }
+.layout10 {
+	width: 10%;
+}
 .layout20 {
 	width: 20%;
 }
@@ -291,6 +299,9 @@ div.input-field > input[type=text] {
 .layout40 {
 	width: 40%;
 }
+.layout45 {
+	width: 45%;
+}
 .layout50 {
 	width: 50%;
 }
@@ -299,6 +310,9 @@ div.input-field > input[type=text] {
 }
 .layout80 {
 	width: 80%;
+}
+.layout90 {
+	width: 90%;
 }
 
 .smalltext {
@@ -964,4 +978,32 @@ div.send-message > textarea {
 	padding: 5px;
 	resize: none;
 	margin-bottom: 5px; 
+}
+
+div.person > div.avatar > img {
+	width: 144px;
+	height: 144px;
+	padding: 4px;
+	border: 1px solid #ddd;	
+	float: left;
+}
+div.person > div.name {
+	margin-left: 5px;
+}
+div.person > div.name > p {
+	color: #777;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+div.person > div.name > p.prof {
+	color: #aaa;
+	font-size: 16px;
+	font-weight: normal;
+}
+div.action {
+	margin-top: 5px;
+	text-align: center;
+	padding-top: 5px;
 }
