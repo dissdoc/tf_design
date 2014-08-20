@@ -1072,3 +1072,9 @@ div.sparkline-box > div.info > p.count {
 	font-size: 18px;	
 	margin-top: 3px;
 }
+
+div.graph-task-activity {
+	width: 100%;
+	height: 168px;
+	margin-top: 5px;
+}
