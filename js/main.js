@@ -201,10 +201,35 @@ $(function() {
 
 // SPARKLINES
 $(function() {
-	$("#sparkline").sparkline([5,6,7,2,0,-4,-2,4], {
+	$(".sparkline-product").sparkline([5,6,7,2,0,4,2,4], {
     type: 'bar',
-    height: '64px',
+    height: '36px',
     barWidth: 8,
     barSpacing: 2,
+    barColor: '#f89406',
+    zeroAxis: false});
+
+    $(".sparkline-activity").sparkline([5,6,7,2,0,4,2,4], {
+    type: 'bar',
+    height: '36px',
+    barWidth: 8,
+    barSpacing: 2,
+    barColor: '#3a87ad',
+    zeroAxis: false});
+
+    $(".sparkline-skills").sparkline([5,6,7,2,0,4,2,4], {
+    type: 'bar',
+    height: '36px',
+    barWidth: 8,
+    barSpacing: 2,
+    barColor: '#080',
+    zeroAxis: false});
+
+    $(".sparkline-views").sparkline([5,6,7,2,0,4,2,4], {
+    type: 'bar',
+    height: '36px',
+    barWidth: 8,
+    barSpacing: 2,
+    barColor: '#dd4b39',
     zeroAxis: false});
 });
