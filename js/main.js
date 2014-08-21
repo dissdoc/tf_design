@@ -283,6 +283,12 @@ $(function() {
 	}).mouseleave(function() {
 		$(this).parent().find('div.info').hide();
 	});
+
+	$('ul.followers > li').mouseenter(function() {
+		$(this).parent().find('div.info').show();
+	}).mouseleave(function() {
+		$(this).parent().find('div.info').hide();
+	});
 });
 
 // SPARKLINES

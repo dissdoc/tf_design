@@ -1078,3 +1078,60 @@ div.graph-task-activity {
 	height: 168px;
 	margin-top: 5px;
 }
+
+ul.followers {
+	list-style-type: none;
+	margin-top: 10px;
+}
+ul.followers > li {
+	float: left;
+	padding: 4px;
+	padding-bottom: 3px;
+	border: 1px solid #ddd;
+	margin: 4px;		
+}
+ul.followers > li:hover {
+	cursor: pointer;
+}
+ul.followers > li > img {
+	width: 32px;
+	height: 32px;
+}
+ul.followers > li > div.info {
+	position: absolute;
+	width: 320px;
+	background-color: #f8f8f8;
+	border: 1px solid #f1f1f1;
+	padding: 5px; 
+	display: none;
+	box-shadow: 0px 1px #e5ffec;
+}
+ul.followers > li > div.info > div.avatar {
+	float: left;
+}
+ul.followers > li > div.info > div.content {
+	margin-left: 68px;
+}
+ul.followers > li > div.info > div.content > p.name {
+	color: #080;
+}
+ul.followers > li > div.info > div.content > p.prof {
+	font-weight: bold;
+	font-size: 11px;
+	margin-top: 2px;
+}
+ul.followers > li > div.info > div.content > p.skills {
+	margin-top: 14px;
+}
+ul.followers > li > div.info > div.content > p.skills > span {
+	background-color: #07547a; 
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding: 3px;
+	margin: 2px;
+	margin-left: 0px;
+	font-size: 10px;	
+}
