@@ -648,111 +648,6 @@ div.dd_tasks > div.paging:hover {
 	background-color: #f1f1f1;
 }
 
-ul.project-activity {
-	list-style-type: none;
-}
-ul.project-activity > li {
-	padding: 5px;
-	border-bottom: 1px solid #eee;
-}
-ul.project-activity > li > div.avatar {
-	float: left;
-	padding-top: 2px;
-}
-ul.project-activity > li > div.message {
-	margin-left: 36px;
-}
-ul.project-activity > li > div.message > p.datetime {
-	padding-top: 5px;
-	color: #999;
-	font-size: 10px;
-}
-ul.project-activity > li > div.message > p.action > a {
-	color: #51a351;
-	text-decoration: underline;
-} 
-ul.project-activity > li > div.message > p.action > a:hover {
-	color: #080;
-} 
-ul.project-activity > li > div.message > p.description {
-	background-color: #f1f1f1;
-	border: 1px solid #ddd;
-	margin-top: 2px;
-	padding: 5px;
-	font-size: 11px;
-	color: #666;
-}
-
-ul.social-activity {
-	list-style-type: none;
-}
-ul.social-activity > li {
-	padding: 5px;
-	border-bottom: 1px solid #eee;
-}
-ul.social-activity > li > div.avatar {
-	float: left;
-	padding-top: 2px;
-}
-ul.social-activity > li > div.message {
-	margin-left: 36px;
-}
-ul.social-activity > li > div.message > p.datetime {
-	padding-top: 5px;
-	color: #999;
-	font-size: 10px;
-}
-ul.social-activity > li > div.message > p.action > a {
-	color: #51a351;
-	text-decoration: underline;
-} 
-ul.social-activity > li > div.message > p.action > a:hover {
-	color: #080;
-} 
-ul.social-activity > li > div.message > p.description {
-	background-color: #f1f1f1;
-	border: 1px solid #ddd;
-	margin-top: 2px;
-	padding: 5px;
-	font-size: 11px;
-	color: #666;
-}
-ul.social-activity > li > div.message > p.buttons {
-	margin-top: 4px;
-	text-align: right;
-}
-
-ul.prof-activity {
-	list-style-type: none;
-}
-ul.prof-activity > li {
-	padding: 5px;
-	border-bottom: 1px solid #eee;
-}
-ul.prof-activity > li > div.avatar {
-	float: left;
-	padding-top: 2px;
-}
-ul.prof-activity > li > div.message {
-	margin-left: 36px;
-}
-ul.prof-activity > li > div.message > p.datetime {
-	padding-top: 5px;
-	color: #999;
-	font-size: 10px;
-}
-ul.prof-activity > li > div.message > p.action > a {
-	color: #51a351;
-	text-decoration: underline;
-} 
-ul.prof-activity > li > div.message > p.action > a:hover {
-	color: #080;
-}
-ul.prof-activity > li > div.message > p.action > span.skill {
-	color: #3a87ad;
-	font-weight: bold;
-}
-
 div.persons > ul {
 	list-style-type: none;
 }
@@ -1060,14 +955,9 @@ div.profile-panel > div.panel > table > tbody > tr > td.name {
 div.profile-panel > div.panel > table > tbody > tr > td.sparklines {
 	float: right;
 }
-div.profile-panel > div.panel > table > tbody > tr > td.span30 {
-	width: 30%;
-}
-div.profile-panel > div.panel > table > tbody > tr > td.span40 {
-	width: 40%;
-}
 div.profile-panel > div.panel > table > tbody > tr > td.span50 {
 	width: 50%;
+	vertical-align: top;
 }
 
 table.t-header {
@@ -1175,6 +1065,9 @@ ul.followers > li > div.info > div.content > p.skills > span {
 
 div.box-block {
 	margin-top: 20px;
+	background-color: #fff !important;
+	border: none!important;
+	text-align: left!important;
 }
 div.box-block > h3 {
 	padding-bottom: 10px;
@@ -1234,4 +1127,37 @@ ul.activity > li > div.message > p.buttons {
 ul.activity > li > div.message > p.action > span.skill {
 	color: #3a87ad;
 	font-weight: bold;
+}
+ul.activity > li > div.message > ul.file-image {
+	list-style-type: none;
+	margin-top: 5px;
+}
+ul.activity > li > div.message > ul.file-image > li {
+	float: left;
+	padding: 5px;
+}
+ul.activity > li > div.message > ul.file-image > li > img {
+	max-width: 180px;
+	max-height: 120px;
+}
+
+td.my-mind {
+	padding-left: 10px;
+}
+td.my-mind > div {
+	padding: 10px;
+	margin: 10px;
+	margin-left: 0px;
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+	text-align: right;
+}
+td.my-mind > div > textarea {
+	width: 99%;
+	color: #555;
+	height: 64px;
+	padding: 3px;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	resize: none;
 }
