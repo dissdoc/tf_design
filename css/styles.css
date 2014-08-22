@@ -1044,6 +1044,7 @@ div.person > div.box > p > span.skill {
 
 div.profile-panel {
 	margin-left: 240px;
+	display: block;
 }
 div.profile-panel > div.panel > div.name {
 	font-size: 20px;
@@ -1053,6 +1054,7 @@ div.profile-panel > div.panel > div.name {
 }
 div.profile-panel > div.panel > div.panels {
 	margin-top: 60px;
+	display: block;
 }
 
 div.sparkline-box {
@@ -1092,6 +1094,22 @@ ul.followers > li {
 }
 ul.followers > li:hover {
 	cursor: pointer;
+}
+ul.followers > li.more {
+	border: none;
+	text-align: center;
+	padding-top: 15px;
+}
+ul.followers > li.more > a {
+	font-weight: bold;
+	color: #080;
+}
+ul.followers > li.more > a:hover {
+	cursor: pointer;
+	color: #51a351;
+}
+ul.followers > li.more:hover {
+	cursor: default;
 }
 ul.followers > li > img {
 	width: 32px;

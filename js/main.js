@@ -285,6 +285,7 @@ $(function() {
 	});
 
 	$('ul.followers > li').mouseenter(function() {
+		if ($(this).hasClass('more')) return;
 		$(this).parent().find('div.info').show();
 	}).mouseleave(function() {
 		$(this).parent().find('div.info').hide();
