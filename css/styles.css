@@ -1172,3 +1172,66 @@ ul.followers > li > div.info > div.content > p.skills > span {
 	margin-left: 0px;
 	font-size: 10px;	
 }
+
+div.box-block {
+	margin-top: 20px;
+}
+div.box-block > h3 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px; 
+}
+
+ul.activity {
+	list-style-type: none;
+}
+ul.activity > li {
+	padding: 5px;
+	border-bottom: 1px solid #eee;
+}
+ul.activity > li > div.avatar {
+	float: left;
+	padding-top: 2px;
+}
+ul.activity > li > div.avatar > img {
+	width: 32px;
+	height: 32px;
+}
+ul.activity > li > div.message {
+	margin-left: 36px;
+}
+ul.activity > li > div.message > p.datetime {
+	padding-top: 5px;
+	color: #999;
+	font-size: 10px;
+}
+ul.activity > li > div.message > p.action > a {
+	color: #51a351;
+	text-decoration: underline;
+} 
+ul.activity > li > div.message > p.action > a:hover {
+	color: #080;
+} 
+ul.activity > li > div.message > p.description {
+	background-color: #f1f1f1;
+	border: 1px solid #ddd;
+	margin-top: 2px;
+	padding: 5px;
+	font-size: 11px;
+	color: #666;
+}
+ul.activity > li > div.message > p.action > a {
+	color: #51a351;
+	text-decoration: underline;
+} 
+ul.activity > li > div.message > p.action > a:hover {
+	color: #080;
+} 
+ul.activity > li > div.message > p.buttons {
+	margin-top: 4px;
+	text-align: right;
+}
+ul.activity > li > div.message > p.action > span.skill {
+	color: #3a87ad;
+	font-weight: bold;
+}
