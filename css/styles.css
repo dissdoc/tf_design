@@ -19,6 +19,9 @@ body {
 .shift {
 	padding: 10px;
 }
+.shift-top10 {
+	margin-top: 10px;
+}
 
 .black {
 	color: #777;
@@ -648,6 +651,10 @@ div.dd_tasks > div.paging:hover {
 	background-color: #f1f1f1;
 }
 
+div.persons {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px;
+}
 div.persons > ul {
 	list-style-type: none;
 }
