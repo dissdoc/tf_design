@@ -1084,6 +1084,7 @@ div.box-block > h3 {
 
 ul.activity {
 	list-style-type: none;
+	margin-bottom: 3px;
 }
 ul.activity > li {
 	padding: 5px;

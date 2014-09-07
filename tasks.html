@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Teamfora</title>   
+    
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.flot.time.js"></script>
+    <script type="text/javascript" src="/js/jquery.sparkline.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <div id="content">
+        
+        <ul class="nav">
+            <li class="brand">
+                <a href="/">
+                    <span class="black">TEAM</span><span class="green">FORA</span>              
+                </a>    
+            </li>
+
+            <li class="item">
+                <a href="/tasks.html">Задачи</a>
+            </li>
+            <li class="item">
+                <a href="/projects.html">Проекты</a>
+            </li>
+            <li class="item">
+                <a href="/calendar.html">Календарь</a>
+            </li>
+            <li class="item">
+                <a href="/messages.html">Сообщения</a>
+            </li>
+            <li class="item">
+                <a href="/persons.html">Пользователи</a>
+            </li>
+            
+            <li class="empty">
+                <a href="/">
+                    <img class="principal-avatar" src="/imgs/avatar-32.png"> 
+                    <span>Мухов Кирилл &#9660;</span>
+                </a>                
+            </li>        
+            <li class="icon tasks">
+                <div class="icon16 task"></div>
+                <sup class="count orange">23</sup>
+            </li>        
+            <li class="icon messages">
+                <div class="icon16 mail"></div>
+                <sup class="count success">2</sup>
+            </li>
+            <li class="icon alarms">
+                <div class="icon16 alarm"></div>
+                <sup class="count red">6</sup>
+            </li>
+        </ul>
+
+        <ul class="dropdown">
+            <li>
+                <a>
+                    <span class="icon16 profile">Профиль</span>
+                </a>
+            </li>    
+            <li>
+                <a>
+                    <span class="icon16 settings">Настройки</span>
+                </a>
+            </li>
+            <li class="separator"></li>    
+            <li>
+                <a>
+                    <span class="icon16 exit">Выход</span>
+                </a>
+            </li>    
+        </ul>
+
+        <div class="dd_alarms">
+            <ul>
+                <li>
+                    <div class="icon16-empty project pull-left"></div>
+                    Вас пригласили в проект <a href="#">Разработка API</a>
+                    <p class="datetime">Позавчера в 16:54 - 24.05.2014</p>
+                </li>
+                <li>
+                    <div class="icon16-empty profile pull-left"></div>
+                    Вас добавил в подписчики <a href="#">Максим Иванченко</a>
+                    <p class="datetime">Позавчера в 16:54 - 24.05.2014</p>
+                </li>
+                <li>
+                    <div class="icon16-empty comment pull-left"></div>
+                    <a href="#">Артур Пирожков</a> оставил комментарий
+                    <p class="datetime">Позавчера в 16:54 - 24.05.2014</p>
+                </li>
+                <li>
+                    <div class="icon16-empty comment pull-left"></div>
+                    <a href="#">Алиса Селезнева</a> ответила в обсуждении
+                    <p class="datetime">Позавчера в 16:54 - 24.05.2014</p>
+                </li>
+                <li>
+                    <div class="icon16-empty profile pull-left"></div>
+                    <a href="#">Артур Пирожков</a> удалился из подписчиков
+                    <p class="datetime">Позавчера в 16:54 - 24.05.2014</p>
+                </li>
+            </ul>
+            <div class="paging">
+                <span class="icon16 alarm">Все активности</span>
+            </div>
+        </div>
+
+        <div class="dd_tasks">
+            <ul>
+                <li>
+                    <div class="open item">
+                        <p class="content">
+                            <a>Максим:</a> Необходимо провести ревизию нескольких серверов и проверить качество работы каждого из них
+                        </p>
+                        <p class="datetime">
+                            2 часа назад в 19:32 - 10.09.2013    
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="start item">
+                        <p class="content">
+                            <a>Антон:</a> Снова не работает планировщик. Быстрее исправьте.
+                        </p>
+                        <p class="datetime">
+                            2 часа назад в 19:32 - 10.09.2013    
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="resolved item">
+                        <p class="content">
+                            <a>Екатерина:</a> Проверить качество поступивших продуктов
+                        </p>
+                        <p class="datetime">
+                            2 часа назад в 19:32 - 10.09.2013    
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="closed item">
+                        <p class="content">
+                            <a>Степан:</a> Запустить качественный продукт в кратчайшие сроки
+                        </p>
+                        <p class="datetime">
+                            2 часа назад в 19:32 - 10.09.2013    
+                        </p>
+                    </div>
+                </li>                
+            </ul>
+            <div class="paging">
+                <span class="icon16 task">Все задачи</span>
+            </div>
+        </div>
+
+        <div class="dd_messages"> 
+            <ul>
+                <li>
+                    <div class="avatar"></div>
+                    <div class="item">
+                        <p class="name">
+                            <b>Максим Иванченко</b> написал
+                        </p>
+                        <p class="content">
+                            Привет! Создал сегодня много интересно в области архитектуры сервера. Загляни и проверь.
+                        </p>
+                        <p class="datetime">
+                            2 часа назад в 19:32 - 10.09.2013
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="avatar"></div>
+                    <div class="item">
+                        <p class="name">
+                            <b>Максим Иванченко</b> написал
+                        </p>
+                        <p class="content">
+                            Необходимо обсудить место проведения совещания. Срочно позвони мне. Договоримся.
+                        </p>
+                        <p class="datetime">
+                            2 дня назад в 07:13 - 04.09.2013
+                        </p>
+                    </div>
+                </li>                
+            </ul>
+            <div class="paging">
+                <span class="icon16 mail">Все сообщения</span>
+            </div>
+        </div>
+
+        <div class="layout">
+            <div class="layout20 pull-left">
+                <div class="frame shift-layout">
+                    <div class="header">
+                        <h3>Фильтры</h3>
+                    </div>
+                    <div class="content">
+                        system filters
+                    </div>
+                </div>
+            </div>
+            <div class="layout50 pull-left">
+                <div class="panel shift-layout">
+                   <div class="input-field">
+                       <input type="text" placeholder="Поиск задач..."/>
+                   </div>
+                   <div>
+                       test                       
+                   </div>
+                   <div class="paging">
+                       Показать еще
+                   </div>
+                </div>
+            </div>
+            <div class="layout30 pull-left">
+                <div class="frame">
+                    <div class="header">
+                        <h3>Рекомендуемые пользователи</h3>
+                    </div>
+                    <div class="content">
+                        <div class="recommend-persons">
+                            <ul>
+                                <li>
+                                    <div class="item">
+                                        <div class="icon16-empty project pull-left"></div>
+                                        Рекомендуем пользователей для проекта <a href="#">Безумные решения</a>
+                                    </div>                                    
+                                    <ul class="persons">
+                                        <li>
+                                            <img src="/imgs/avatar-32.png">
+                                            <div class="info">
+                                                <div class="avatar">
+                                                    <img src="/imgs/avatar-64.png">
+                                                </div>
+                                                <div class="content">
+                                                    <p class="name">
+                                                        Кирилл Мухов
+                                                    </p>
+                                                    <p class="prof">
+                                                        СЕО Teamfora
+                                                    </p>
+                                                    <p class="skills">
+                                                        <span>Java</span>
+                                                        <span>JavaScript</span>
+                                                        <span>MySQL</span>
+                                                        <span>MongoDB</span>
+                                                        <span>Photoshop</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user1.png">
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user2.png">
+                                        </li>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="icon16-empty task pull-left"></div>
+                                        Рекомендуем пользователей для задачи <a href="#">Контроль качества</a> 
+                                    </div>                    
+                                    <p class="info">
+                                        Необходимо организовать контроль качества исполнения текущих задач для проекта с изменяемыми приоритетами
+                                    </p>                
+                                    <ul class="persons">
+                                        <li>
+                                            <img src="/imgs/avatar-32.png">
+                                            <div class="info">
+                                                <div class="avatar">
+                                                    <img src="/imgs/avatar-64.png">
+                                                </div>
+                                                <div class="content">
+                                                    <p class="name">
+                                                        Кирилл Мухов
+                                                    </p>
+                                                    <p class="prof">
+                                                        СЕО Teamfora
+                                                    </p>
+                                                    <p class="skills">
+                                                        <span>Java</span>
+                                                        <span>JavaScript</span>
+                                                        <span>MySQL</span>
+                                                        <span>MongoDB</span>
+                                                        <span>Photoshop</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="icon16-empty project pull-left"></div>
+                                        Рекомендуем пользователей для проекта <a href="#">Безумные решения</a> 
+                                    </div>                                    
+                                    <ul class="persons">
+                                        <li>
+                                            <img src="/imgs/avatar-32.png">
+                                            <div class="info">
+                                                <div class="avatar">
+                                                    <img src="/imgs/avatar-64.png">
+                                                </div>
+                                                <div class="content">
+                                                    <p class="name">
+                                                        Кирилл Мухов
+                                                    </p>
+                                                    <p class="prof">
+                                                        СЕО Teamfora
+                                                    </p>
+                                                    <p class="skills">
+                                                        <span>Java</span>
+                                                        <span>JavaScript</span>
+                                                        <span>MySQL</span>
+                                                        <span>MongoDB</span>
+                                                        <span>Photoshop</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user1.png">
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user2.png">
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user3.png">
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user4.png">
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user5.png">
+                                        </li>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="icon16-empty task pull-left"></div>
+                                        Рекомендуем пользователей для задачи <a href="#">Контроль качества</a>
+                                    </div>                    
+                                    <p class="info">
+                                        Необходимо организовать контроль качества исполнения текущих задач для проекта с изменяемыми приоритетами
+                                    </p>                
+                                    <ul class="persons">
+                                        <li>
+                                            <img src="/imgs/avatar-32.png">
+                                            <div class="info">
+                                                <div class="avatar">
+                                                    <img src="/imgs/avatar-64.png">
+                                                </div>
+                                                <div class="content">
+                                                    <p class="name">
+                                                        Кирилл Мухов
+                                                    </p>
+                                                    <p class="prof">
+                                                        СЕО Teamfora
+                                                    </p>
+                                                    <p class="skills">
+                                                        <span>Java</span>
+                                                        <span>JavaScript</span>
+                                                        <span>MySQL</span>
+                                                        <span>MongoDB</span>
+                                                        <span>Photoshop</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user1.png">
+                                        </li>
+                                        <li>
+                                            <img src="/imgs/user2.png">
+                                        </li>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        Показать еще
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
