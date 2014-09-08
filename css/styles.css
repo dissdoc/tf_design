@@ -1169,3 +1169,24 @@ td.my-mind > div > textarea {
 	border: 1px solid #ddd;
 	resize: none;
 }
+
+div.filter-panel {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+}
+div.filter-panel > h4 {
+	color: #888;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: normal;
+}
+div.filter-panel > input[type=text] {
+	border: 1px solid #eee;
+	width: 97%;
+	padding: 6px;
+	margin-bottom: 5px;
+}
+div.filter-panel-empty {
+	border: none;
+}
