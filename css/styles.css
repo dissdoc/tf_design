@@ -201,6 +201,22 @@ span.closed-task {
 	padding: 2px;	
 }
 
+.status-all {
+	background: #eee;
+}
+.status-open {
+	background: #fedbaa;	
+}
+.status-start {
+	background: #98c2d6;	
+}
+.status-resolved {
+	background: #b0e5b0;
+}
+.status-closed {
+	background: #ddd; 
+}
+
 
 .open {
 	border-left: 5px solid #f89406;
@@ -1186,6 +1202,19 @@ div.filter-panel > input[type=text] {
 	width: 97%;
 	padding: 6px;
 	margin-bottom: 5px;
+}
+div.filter-panel > p {
+	margin-bottom: 10px;
+}
+div.filter-panel > p > span.status {
+	margin-right: -4px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #444;	
+}
+div.filter-panel > p > span.status:hover {
+	cursor: pointer;
 }
 div.filter-panel-empty {
 	border: none;
