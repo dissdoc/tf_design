@@ -9,7 +9,11 @@
     <script type="text/javascript" src="/js/jquery.flot.min.js"></script>
     <script type="text/javascript" src="/js/jquery.flot.time.js"></script>
     <script type="text/javascript" src="/js/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="/css/jquery-ui.theme.css">
 </head>
 <body>
 
@@ -236,7 +240,12 @@
                         </div>
 
                         <div class="filter-panel filter-panel-empty">
-                            <h4>Поиск по дате</h4>                            
+                            <h4>Поиск по дате</h4>   
+                            <p>
+                                <input type="text" class="date-start" placeholder="Начало">
+                                &ndash;
+                                <input type="text" class="date-end" placeholder="Окончание">
+                            </p>                         
                         </div>
                     </div>
                 </div>

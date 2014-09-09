@@ -326,3 +326,19 @@ $(function() {
     barColor: '#dd4b39',
     zeroAxis: false});
 });
+
+// DATEPICKER
+$(function() {
+	$('.date-start').datepicker({
+		showOn: 'button',
+		buttonImage: '/imgs/datepicker.png',
+		buttonImageOnly: true,
+		buttonText: 'showDate'
+	});
+	$('.date-end').datepicker({
+		showOn: 'button',
+		buttonImage: '/imgs/datepicker.png',
+		buttonImageOnly: true,
+		buttonText: 'showDate'
+	});
+});
