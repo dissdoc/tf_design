@@ -230,8 +230,6 @@ span.closed-task {
 	color: #fff !important;
 }
 
-
-
 .open {
 	border-left: 5px solid #f89406;
 }
@@ -1219,6 +1217,7 @@ div.filter-panel > input[type=text] {
 }
 div.filter-panel > p {
 	margin-bottom: 10px;
+	margin-top: 5px;
 }
 div.filter-panel > p > span.status {
 	margin-right: -4px;
@@ -1229,6 +1228,34 @@ div.filter-panel > p > span.status {
 }
 div.filter-panel > p > span.status:hover {
 	cursor: pointer;
+}
+div.filter-panel > p > span.tag {	
+	white-space: nowrap;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	max-width: 250px;
+  	background-color: #eee; 
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #666;
+	display: inline-block;
+	padding: 3px;
+	margin: 2px;
+	margin-left: 0px;
+	font-size: 12px;
+}
+div.filter-panel > p > span.tag:hover {
+	cursor: pointer;
+}
+div.filter-panel > p > span.tag-check {
+	background: #bbb;
+	color: #fff;
+}
+div.filter-panel > a.tag-more {
+	font-weight: bold;
+	text-decoration: none;
+	color: #080;
 }
 div.filter-panel-empty {
 	border: none;
