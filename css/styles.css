@@ -201,21 +201,35 @@ span.closed-task {
 	padding: 2px;	
 }
 
-.status-all {
-	background: #eee;
-}
 .status-open {
 	background: #fedbaa;	
+}
+.status-open-check {
+	background: #e79016;
+	color: #fff !important;		
 }
 .status-start {
 	background: #98c2d6;	
 }
+.status-start-check {
+	background: #5390ae;
+	color: #fff !important;		
+}
 .status-resolved {
 	background: #b0e5b0;
 }
-.status-closed {
-	background: #ddd; 
+.status-resolved-check {
+	background: #469046;
+	color: #fff !important;	
 }
+.status-closed {
+	background: #eee; 
+}
+.status-closed-check {
+	background: #aaa;
+	color: #fff !important;
+}
+
 
 
 .open {
