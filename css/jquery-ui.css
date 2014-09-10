@@ -530,10 +530,10 @@ button.ui-button::-moz-focus-inner {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #51a351;
-	background: #b0e5b0;
+	border: 1px solid #ddd;
+	background: #efefef;
 	font-weight: bold;
-	color: #080;
+	color: #666;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -566,10 +566,10 @@ button.ui-button::-moz-focus-inner {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #ddd;
-	background: #efefef;
+	border: 1px solid #51a351;
+	background: #b0e5b0;
 	font-weight: bold;
-	color: #666;
+	color: #080;
 }
 .ui-state-active a,
 .ui-state-active a:link,
