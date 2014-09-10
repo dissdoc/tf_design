@@ -1220,6 +1220,10 @@ div.filter-panel > p {
 	margin-top: 5px;
 	color: #aaa;
 }
+div.filter-panel > p.clear-panel {
+	margin: 0;	
+	margin-bottom: 10px;
+}
 div.filter-panel > p > span.status {
 	margin-right: -4px;
 	padding: 5px;
@@ -1259,12 +1263,14 @@ div.filter-panel > p > .date-end {
 	padding: 2px;
 	width: 130px;
 	margin-left: 5px;
+	color: #666;
 }
 div.filter-panel > p > img.ui-datepicker-trigger {
 	position: relative;
 	top: 2px;
 	margin-left: 3px;
 	margin-right: 5px;
+	cursor: pointer;
 }
 div.filter-panel > a.tag-more {
 	font-weight: bold;
