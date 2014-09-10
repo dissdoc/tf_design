@@ -1260,14 +1260,14 @@ div.filter-panel > p > span.tag-check {
 div.filter-panel > p > .date-start,
 div.filter-panel > p > .date-end {
 	border: 1px solid #ddd;
-	padding: 2px;
+	padding: 4px;
 	width: 130px;
 	margin-left: 5px;
 	color: #666;
 }
 div.filter-panel > p > img.ui-datepicker-trigger {
 	position: relative;
-	top: 2px;
+	top: 4px;
 	margin-left: 3px;
 	margin-right: 5px;
 	cursor: pointer;

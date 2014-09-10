@@ -333,12 +333,14 @@ $(function() {
 		showOn: 'button',
 		buttonImage: '/imgs/datepicker.png',
 		buttonImageOnly: true,
-		buttonText: 'showDate'
+		buttonText: 'showDate',
+		dateFormat: 'dd.mm.yy',
 	});
 	$('.date-end').datepicker({
 		showOn: 'button',
 		buttonImage: '/imgs/datepicker.png',
 		buttonImageOnly: true,
-		buttonText: 'showDate'
+		buttonText: 'showDate',
+		dateFormat: 'dd.mm.yy'
 	});
 });
