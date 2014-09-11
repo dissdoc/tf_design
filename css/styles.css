@@ -1311,8 +1311,7 @@ div.create-task-form > div > textarea {
 	height: 64px;
 }
 div.create-task-form > div > p.action {	
-	margin-top: 5px;		
-	margin-right: 8px;
+	margin-top: 5px;	
 }
 div.create-task-form > div.descr > p > a {
 	color: #080;
@@ -1320,10 +1319,14 @@ div.create-task-form > div.descr > p > a {
 	text-decoration: none;
 }
 div.create-task-form > div.descr > div.more-for-task {
-	display: none;
+	width: 99%;
 }
 div.create-task-form > div.descr > div.more-for-task > p {
 	margin-bottom: 5px;
+}
+div.create-task-form > div.descr > div.more-for-task > p.icons > img {
+	margin-right: 5px;
+	cursor: pointer;
 }
 div.create-task-form > div.descr > div.more-for-task > p > span {
 	color: #666;
