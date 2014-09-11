@@ -258,15 +258,41 @@
             </div>
             <div class="layout50 pull-left">
                 <div class="panel shift-layout">
-                   <div class="input-field">
-                       <input type="text" placeholder="Поиск задач..."/>
-                   </div>
-                   <div>
+                    <div class="create-task-form">
+                        <div class="title">
+                            <input type="text" placeholder="Создать задачу..." name="title" />
+                        </div>
+                        <div class="descr">
+                            <textarea placeholder="Описание задачи" name="description"></textarea>
+                            <p>
+                                <a href="#" class="more-details">Дополнительно &#9660;</a>
+                            </p>
+                            <div class="more-for-task">
+                                <p>                   
+                                    <span>Теги:</span>             
+                                    <input type="text" placeholder="Введите теги для задачи..." name="tags">
+                                </p>
+                                <p>
+                                    <span>Исполнитель:</span>
+                                    <a href="#" class="performer">Исполнитель задачи...</a>
+                                </p>
+                                <p>
+                                    <span>Срок исполнения:</span>
+                                    <input type="text" placeholder="Окончание" class="period-create">
+                                </p>  
+                            </div>                          
+                            <p class="action pull-right">
+                                <button class="medium agree">Создать</button>
+                            </p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div>
                        test                       
-                   </div>
-                   <div class="paging">
+                    </div>
+                    <div class="paging">
                        Показать еще
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="layout30 pull-left">

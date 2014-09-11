@@ -344,3 +344,35 @@ $(function() {
 		dateFormat: 'dd.mm.yy'
 	});
 });
+
+// CREATE TASK 
+$(function() {
+	$('div.create-task-form > div.title > input[type=text]').focus(function() {
+		$(this).attr('placeholder', 'Название задачи');
+		$('div.create-task-form > div.descr').show();
+	});
+
+	$('div.create-task-form > div.descr > p.action > button').click(function() {
+		$('div.create-task-form > div.title > input[type=text]').attr('placeholder', 'Создать задачу...');
+		$('div.create-task-form > div.descr').hide();
+	});
+
+	var show_details = false;
+	$('div.create-task-form > div.descr > p > a.more-details').click(function() {
+		if (!show_details) {
+			$('div.create-task-form > div.descr > div.more-for-task').show();
+			show_details = true;
+		} else {
+			$('div.create-task-form > div.descr > div.more-for-task').hide();	
+			show_details = false;
+		}
+	});
+
+	$('div.create-task-form > div.descr > div.more-for-task > p > .period-create').datepicker({
+		showOn: 'button',
+		buttonImage: '/imgs/datepicker.png',
+		buttonImageOnly: true,
+		buttonText: 'showDate',
+		dateFormat: 'dd.mm.yy',
+	});
+});
