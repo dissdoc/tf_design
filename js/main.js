@@ -357,22 +357,16 @@ $(function() {
 		$('div.create-task-form > div.descr').hide();
 	});
 
-	var show_details = false;
-	$('div.create-task-form > div.descr > p > a.more-details').click(function() {
-		if (!show_details) {
-			$('div.create-task-form > div.descr > div.more-for-task').show();
-			show_details = true;
-		} else {
-			$('div.create-task-form > div.descr > div.more-for-task').hide();	
-			show_details = false;
-		}
-	});
-
-	$('div.create-task-form > div.descr > div.more-for-task > p > .period-create').datepicker({
+	$('#task-select-date').datepicker({
 		showOn: 'button',
 		buttonImage: '/imgs/datepicker.png',
 		buttonImageOnly: true,
 		buttonText: 'showDate',
-		dateFormat: 'dd.mm.yy',
+		dateFormat: 'dd.mm.yy',	
 	});
+
+	/*$('div.create-task-form > div.descr > div.more-for-task > p > .period-task').click(function() {
+		console.log('test');
+
+	});*/
 });

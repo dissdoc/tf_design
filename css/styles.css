@@ -1328,6 +1328,11 @@ div.create-task-form > div.descr > div.more-for-task > p.icons > img {
 	margin-right: 5px;
 	cursor: pointer;
 }
+div.create-task-form > div.descr > div.more-for-task > p.icons > img.ui-datepicker-trigger {
+	position: relative;
+	top: 3px;
+	margin-left: -4px;
+}
 div.create-task-form > div.descr > div.more-for-task > p > span {
 	color: #666;
 }
@@ -1350,6 +1355,7 @@ div.create-task-form > div.descr > div.more-for-task > p > img.ui-datepicker-tri
 	margin-left: 3px;
 	margin-right: 5px;
 	cursor: pointer;
+	padding: 2px;
 }
 div.create-task-form > div.descr > div.more-for-task > p > a {
 	color: #aaa;
