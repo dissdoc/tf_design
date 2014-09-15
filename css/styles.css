@@ -1318,46 +1318,15 @@ div.create-task-form > div.descr > p > a {
 	font-weight: bold;
 	text-decoration: none;
 }
-div.create-task-form > div.descr > div.more-for-task {
-	width: 99%;
+div.create-task-form > div.descr > div.tags {
+	margin-top: 5px;	
 }
-div.create-task-form > div.descr > div.more-for-task > p {
-	margin-bottom: 5px;
-}
-div.create-task-form > div.descr > div.more-for-task > p.icons > img {
-	margin-right: 5px;
-	cursor: pointer;
-}
-div.create-task-form > div.descr > div.more-for-task > p.icons > img.ui-datepicker-trigger {
-	position: relative;
-	top: 3px;
-	margin-left: -4px;
-}
-div.create-task-form > div.descr > div.more-for-task > p > span {
+div.create-task-form > div.descr > div.tags > div > label {
+	background: url('/imgs/tags.png') no-repeat;
+	padding-left: 18px;
 	color: #666;
+	padding-top: 2px;
 }
-div.create-task-form > div.descr > div.more-for-task > p > [name=tags] {
-	border: none;
-	width: 95%;
-	padding: 4px;
-	background: #f2f2f2;
-}
-div.create-task-form > div.descr > div.more-for-task > p > .period-create {
-	border: 1px solid #ddd;
-	padding: 4px;
-	width: 130px;
-	margin-left: 5px;
-	color: #666;
-}
-div.create-task-form > div.descr > div.more-for-task > p > img.ui-datepicker-trigger {
-	position: relative;
-	top: 4px;
-	margin-left: 3px;
-	margin-right: 5px;
-	cursor: pointer;
-	padding: 2px;
-}
-div.create-task-form > div.descr > div.more-for-task > p > a {
-	color: #aaa;
-	text-decoration: none;
+div.create-task-form > div.descr > div.tags > div > ul {
+	list-style-type: none;
 }
