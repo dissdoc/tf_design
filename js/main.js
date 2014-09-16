@@ -365,8 +365,29 @@ $(function() {
 		dateFormat: 'dd.mm.yy',	
 	});
 
-	/*$('div.create-task-form > div.descr > div.more-for-task > p > .period-task').click(function() {
-		console.log('test');
+	$('div.create-task-form > div.descr > div.tags > div > input[type=text]').keypress(function(event) {
+		var ul = $('div.create-task-form > div.descr > div.tags > div > ul'),
+			val = $(this).val().trim();
 
-	});*/
+		if (event.which == 13) {
+			if ($(ul).find('li:first').hasClass('empty') && val != '') {
+				$(ul).find('li:first').hide();
+			}
+
+			var tags = val.split(',');
+			for(item in tags) {
+				$(ul).prepend('<li class="item">' + tags[item] + '<sup>x</sup></li>');
+			}
+
+			$(this).val('');
+		}
+	});
+
+	$('div.create-task-form > div.descr > div.tags > div > ul').on('click', 'li > sup', function() {
+		$(this).parent().remove();
+
+		if ($('div.create-task-form > div.descr > div.tags > div > ul').find('li').length == 1) {
+			$('div.create-task-form > div.descr > div.tags > div > ul > li:first').show();
+		}
+	});
 });
