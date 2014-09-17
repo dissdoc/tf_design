@@ -93,6 +93,9 @@ body {
 .follow {
 	background: url('/imgs/follow.png') no-repeat;
 }
+.key {
+	background: url('/imgs/key.png') no-repeat;
+}
 
 sup.count {
 	position: relative;
@@ -1365,4 +1368,71 @@ div.create-task-form > div.descr > div.tags > div > input[type=text] {
 	padding: 4px;
 	border: 1px solid #ddd;
 	width: 98%;
+}
+
+div.login-form {
+	position: absolute;
+	width: 320px;	
+	top: 15%;
+	left: 40%;
+	text-align: center;
+}
+div.login-form > span.shadow {
+	font-size: 128px;
+	font-weight: bold;		
+}
+div.login-form > span.shadow > span.black {
+	color: #dbdbdb;
+	margin-right: -20px;
+}
+div.login-form > span.shadow > span.green {
+	color: #bbe5bb;
+	margin-left: -20px;
+}
+div.login-form > div.panel {
+	background: #fff;
+	border: 1px solid #efefef;
+	text-align: left;
+	margin-bottom: 15px;
+}
+div.login-form > div.panel > h3 {
+	font-size: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #efefef;
+	font-weight: normal;
+}
+div.login-form > div.panel > div.fields > div.item,
+div.login-form > div.panel > div.fields > div.footer {
+	padding: 5px;	
+	color: #666;
+}
+div.login-form > div.panel > div.fields > div.item > img {
+	padding: 5px;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	margin-top: -3px;
+	background: #efefef;
+}
+div.login-form > div.panel > div.fields > div.item > input {
+	border: 1px solid #ddd;
+	width: 248px;
+	padding: 5px;
+	margin-left: -4px;
+	color: #666;
+}
+div.login-form > div.panel > div.fields > div.footer > div > input[type=checkbox] {
+	position: relative;
+	top: 2px;
+	margin-top: 6px;
+}
+div.login-form > div.help {
+	margin-bottom: 5px;
+	color: #666;
+}
+div.login-form > div.help > a {
+	color: #51a351;
+}
+div.login-form > div.help > a:hover {
+	color: #080;
 }
