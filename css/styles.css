@@ -1402,6 +1402,11 @@ div.login-form > div.panel > h3 {
 	border-bottom: 1px solid #efefef;
 	font-weight: normal;
 }
+div.login-form > div.panel > div.fields > span {
+	color: #666;
+	display: block;
+	padding-bottom: 10px;
+}
 div.login-form > div.panel > div.fields > div.item,
 div.login-form > div.panel > div.fields > div.footer {
 	padding: 5px;	
