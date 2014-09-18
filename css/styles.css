@@ -1366,3 +1366,86 @@ div.create-task-form > div.descr > div.tags > div > input[type=text] {
 	border: 1px solid #ddd;
 	width: 98%;
 }
+div.create-task-form > div.descr > div.more-for-task > div {
+	margin-right: 10px;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person {
+	background: url('/imgs/person_add.png') no-repeat;
+	padding-left: 18px;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person {
+	color: #999;
+	margin-top: 4px;	
+	display: inline-block;
+	margin-top: 2px;
+	font-size: 13px;
+	cursor: pointer;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person {
+	color: #666;
+	display: none;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person > sup {
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #999;
+	color: #fff;
+	border-radius: 50%;
+	margin-left: 1px;	
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons {
+	position: absolute;
+	border: 1px solid #ddd;
+	padding: 5px;
+	background: #fff;
+	display: none;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul {
+	list-style-type: none;
+	max-height: 100px;
+	overflow: auto;
+	min-width: 200px;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li {
+	padding: 3px;
+	border-bottom: 1px solid #ddd;
+	color: #666;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li.last {
+	border: none !important;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li:hover {
+	background-color: #efefef;
+	cursor: pointer;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li > img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+#task-select-date {
+	width: 110px;
+	margin-left: 18px;
+	border: none;
+	background: #f2f2f2;
+	color: #999;
+}
+div.create-task-form > div.descr > div.more-for-task > div > img.ui-datepicker-trigger {
+	position: relative;
+	left: -130px;
+	top: 2px;
+	cursor: pointer;
+}
+div.create-task-form > div.descr > div.more-for-task > div > sup {
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #999;
+	color: #fff;
+	border-radius: 50%;
+	margin-left: 1px;
+	position: relative;
+	left: -60px;	
+	display: none;
+}

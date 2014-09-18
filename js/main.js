@@ -363,7 +363,14 @@ $(function() {
 		buttonImageOnly: true,
 		buttonText: 'showDate',
 		dateFormat: 'dd.mm.yy',	
+		onSelect: function() {
+			$('div.create-task-form > div.descr > div.more-for-task > div > sup').show();
+		}
 	});
+	$('div.create-task-form > div.descr > div.more-for-task > div > sup').click(function() {
+		$('#task-select-date').val('');
+		$(this).hide();
+	})
 
 	$('div.create-task-form > div.descr > div.tags > div > input[type=text]').keypress(function(event) {
 		var ul = $('div.create-task-form > div.descr > div.tags > div > ul'),
@@ -389,5 +396,20 @@ $(function() {
 		if ($('div.create-task-form > div.descr > div.tags > div > ul').find('li').length == 1) {
 			$('div.create-task-form > div.descr > div.tags > div > ul > li:first').show();
 		}
+	});
+
+	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person').click(function() {
+		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons').show();
+	});
+
+	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li').click(function() {
+		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person').hide();
+		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person').show();
+		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons').hide();
+	});
+
+	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person > sup').click(function() {
+		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person').show();
+		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person').hide();
 	});
 });
