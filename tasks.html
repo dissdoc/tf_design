@@ -10,9 +10,10 @@
     <script type="text/javascript" src="/js/jquery.flot.time.js"></script>
     <script type="text/javascript" src="/js/jquery.sparkline.min.js"></script>
     <script type="text/javascript" src="/js/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="/js/jquery.autosize.input.min.js"></script>    
     <link rel="stylesheet" href="/css/jquery-ui.css">
     <link rel="stylesheet" href="/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
@@ -264,17 +265,13 @@
                         </div>
                         <div class="descr">
                             <textarea placeholder="Описание задачи" name="description"></textarea>
-                            <div class="tags">
-                                <div class="pull-left">
-                                    <label>Теги:</label> 
-                                </div>
-                                <div class="pull-left right-panel">
-                                    <ul>
-                                        <li class="empty">Нет тегов для задачи</li>
-                                        <div class="clearfix"></div>
-                                    </ul>
-                                    <input type="text" placeholder="Введите теги для задачи">
-                                </div>
+                            <div class="tags">                              
+                                <ul>
+                                    <li>
+                                        <input type="text" placeholder="Добавить теги">        
+                                    </li>
+                                </ul>
+                                
                                 <div class="clearfix"></div>
                             </div>
                             <div class="more-for-task">

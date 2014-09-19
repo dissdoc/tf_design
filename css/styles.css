@@ -1322,52 +1322,50 @@ div.create-task-form > div.descr > p > a {
 	text-decoration: none;
 }
 div.create-task-form > div.descr > div.tags {
-	margin-top: 5px;
-	margin-bottom: 10px;	
-}
-div.create-task-form > div.descr > div.tags > div.right-panel {
-	width: 94%;
-}
-div.create-task-form > div.descr > div.tags > div > label {
+	margin-top: 2px;
+	margin-bottom: 5px;	
 	background: url('/imgs/tags.png') no-repeat;
 	padding-left: 18px;
-	color: #666;
-	padding-top: 2px;
 }
-div.create-task-form > div.descr > div.tags > div > ul {
+div.create-task-form > div.descr > div.tags > ul {
 	list-style-type: none;
-	margin-left: 5px;
-	width: 99%;
-	background-color: #f2f2f2;
-}
-div.create-task-form > div.descr > div.tags > div > ul > li {
-	background-color: #f2f2f2;
 	float: left;
+	background-color: #f2f2f2;
 }
-div.create-task-form > div.descr > div.tags > div > ul > li.empty {
-	color: #999;
-}
-div.create-task-form > div.descr > div.tags > div > ul > li.item {
-	color: #666;
-	margin-top: -3px;
-	padding-left: 3px;
+div.create-task-form > div.descr > div.tags > ul > li {
+	padding: 2px;
+	float: left;	
 	margin-bottom: 3px;
 }
-div.create-task-form > div.descr > div.tags > div > ul > li.item > sup {
+div.create-task-form > div.descr > div.tags > ul > li.item {
+	background-color: #b0e5b0;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin-right: 3px;	
+	color: #666;
+}
+div.create-task-form > div.descr > div.tags > ul > li > span {
 	cursor: pointer;
+	padding: 0;
 	padding-left: 2px;
 	padding-right: 2px;
-	background-color: #999;
+	background-color: #1b9e1b;
 	color: #fff;
 	border-radius: 50%;
-	margin-left: 1px;
+	margin-left: 2px;
 }
-div.create-task-form > div.descr > div.tags > div > input[type=text] {
-	margin-left: 3px;
-	margin-top: 3px;
-	padding: 4px;
-	border: 1px solid #ddd;
-	width: 98%;
+div.create-task-form > div.descr > div.tags > ul > li > input[type=text] {
+	float: left;
+	margin-left: 2px;
+	padding: 2px;
+	border: none;
+	background-color: #f2f2f2;
+	position: relative;
+	top: -2px;
+	transition: width 0.25s;
+	color: #666;
+	min-width: 100px;
 }
 div.create-task-form > div.descr > div.more-for-task > div {
 	margin-right: 10px;

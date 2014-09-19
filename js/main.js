@@ -372,30 +372,21 @@ $(function() {
 		$(this).hide();
 	})
 
-	$('div.create-task-form > div.descr > div.tags > div > input[type=text]').keypress(function(event) {
-		var ul = $('div.create-task-form > div.descr > div.tags > div > ul'),
+	$('div.create-task-form > div.descr > div.tags > ul > li > input[type=text]').autosizeInput();
+	$('div.create-task-form > div.descr > div.tags > ul > li > input[type=text]').keypress(function(event) {
+		var ul = $('div.create-task-form > div.descr > div.tags > ul'),
 			val = $(this).val().trim();
 
-		if (event.which == 13) {
-			if ($(ul).find('li:first').hasClass('empty') && val != '') {
-				$(ul).find('li:first').hide();
+		if (event.which == 13) {	
+			if (val.length != 0) {		
+				$(this).parent().before('<li class="item">' + val + '<span>x</span></li>');
 			}
-
-			var tags = val.split(',');
-			for(item in tags) {
-				$(ul).prepend('<li class="item">' + tags[item] + '<sup>x</sup></li>');
-			}
-
 			$(this).val('');
 		}
 	});
 
-	$('div.create-task-form > div.descr > div.tags > div > ul').on('click', 'li > sup', function() {
+	$('div.create-task-form > div.descr > div.tags > ul').on('click', 'li > span', function() {
 		$(this).parent().remove();
-
-		if ($('div.create-task-form > div.descr > div.tags > div > ul').find('li').length == 1) {
-			$('div.create-task-form > div.descr > div.tags > div > ul > li:first').show();
-		}
 	});
 
 	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person').click(function() {
