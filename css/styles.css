@@ -1549,6 +1549,10 @@ ul.task-list > li {
 	padding: 5px;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 5px;
+	cursor: pointer;
+}
+ul.task-list > li:hover {
+	background-color: #efffff;
 }
 ul.task-list > li > div {
 	padding-left: 5px;
