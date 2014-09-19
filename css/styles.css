@@ -96,7 +96,13 @@ body {
 .key {
 	background: url('/imgs/key.png') no-repeat;
 }
+.delete {
+	background: url('/imgs/delete.png') no-repeat;
+}
 
+.error {
+	color: #b31519;
+}
 sup.count {
 	position: relative;
 	top: -20px;
@@ -1531,4 +1537,88 @@ div.login-form > div.help > a {
 }
 div.login-form > div.help > a:hover {
 	color: #080;
+}
+
+ul.task-list {
+	list-style-type: none;
+	margin-top: 15px;
+	border-top: 1px solid #ddd;
+	padding: 5px;
+}
+ul.task-list > li {
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 5px;
+}
+ul.task-list > li > div {
+	padding-left: 5px;
+	color: #666;
+}
+ul.task-list > li > div.header {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+}
+ul.task-list > li > div.header > div > img {
+	margin-top: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ul.task-list > li > div.header > div.fave > img {
+	margin: 0;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+ul.task-list > li > div.header > div > div.avatar {
+	float: left;
+	margin-right: 4px;
+}
+ul.task-list > li > div.header > div > div.info {
+	margin-left: 25px;
+	min-width: 120px;
+}
+ul.task-list > li > div.header > div > div.info > a {
+	color: #51a351;
+}
+ul.task-list > li > div.header > div > div.info > p {
+	font-size: 11px;
+	padding-top: 3px;
+}
+ul.task-list > li > div.body {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 8px;
+}
+ul.task-list > li > div.body > h4 {
+	color: #666;
+	margin-bottom: 2px;
+}
+ul.task-list > li > div.body > p {
+	color: #666;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+ul.task-list > li > div.body > p > img {
+	position: relative;
+	top: 2px;
+}
+ul.task-list > li > div.body > p > span {
+	background-color: #efefef;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin-right: 3px;	
+	color: #666;	
+	padding: 2px;
+	display: inline-block;
+}
+ul.task-list > li > div.footer {
+	margin-bottom: 5px;
+}
+ul.task-list > li > div.footer > label {	
+	font-size: 11px;
+	color: #666;
+	padding-left: 18px;
+	padding-top: 1px;
 }
