@@ -1404,7 +1404,7 @@ div.create-task-form > div.descr > div.more-for-task > div > div.person > div.li
 }
 div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul {
 	list-style-type: none;
-	max-height: 100px;
+	max-height: 200px;
 	overflow: auto;
 	min-width: 200px;
 }
@@ -1424,6 +1424,16 @@ div.create-task-form > div.descr > div.more-for-task > div > div.person > div.li
 	width: 32px;
 	height: 32px;
 	vertical-align: middle;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li.search > input[type=text] {
+	width: 96%;
+	padding: 2px;
+	border: none;
+	color: #666;
+}
+div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li.search:hover {
+	background-color: #fff;
+	cursor: default;
 }
 #task-select-date {
 	width: 110px;

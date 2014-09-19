@@ -394,6 +394,7 @@ $(function() {
 	});
 
 	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li').click(function() {
+		if ($(this).hasClass('search')) return;
 		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person').hide();
 		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person').show();
 		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons').hide();
@@ -402,5 +403,17 @@ $(function() {
 	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person > sup').click(function() {
 		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.change-person').show();
 		$('div.create-task-form > div.descr > div.more-for-task > div > div.person > span.current-person').hide();
+	});
+
+	$('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li.search > input[type=text]').keypress(function(event) {
+		var val = $(this).val().trim();
+		if (event.which == 13) { 
+
+		} else {
+			console.log(val);			
+			if ($('div.create-task-form > div.descr > div.more-for-task > div > div.person > div.list-persons > ul > li > span:contains("'+val+'")')) {
+				console.log('hello');
+			}
+		}	
 	});
 });
