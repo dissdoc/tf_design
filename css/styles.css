@@ -1131,12 +1131,25 @@ ul.activity > li > div.avatar {
 	float: left;
 	padding-top: 2px;
 }
+ul.activity > li > div.share {
+	float: left;
+	padding-left: 36px;
+}
+ul.activity > li > div.share > img {
+	position: relative;
+	top: 8px;
+}
+ul.activity > li > div.avatar2 {
+	float: left;
+	margin-right: 2px;
+}
+ul.activity > li > div.avatar2 > img,
 ul.activity > li > div.avatar > img {
 	width: 32px;
 	height: 32px;
 }
 ul.activity > li > div.message {
-	margin-left: 36px;
+	padding-left: 36px;
 }
 ul.activity > li > div.message > p.datetime {
 	padding-top: 5px;
@@ -1156,6 +1169,10 @@ ul.activity > li > div.message > p.description {
 	margin-top: 2px;
 	padding: 5px;
 	font-size: 11px;
+	color: #666;
+}
+ul.activity > li > div.message > p.simple-text {
+	margin-top: 5px;
 	color: #666;
 }
 ul.activity > li > div.message > p.action > a {
@@ -1625,4 +1642,135 @@ ul.task-list > li > div.footer > label {
 	color: #666;
 	padding-left: 18px;
 	padding-top: 1px;
+}
+
+div.author,
+div.task-content,
+div.task-tags, 
+div.task-comment,
+div.task-comment-form {
+	margin: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+}
+div.author > div > div.avatar > img {
+	width: 32px;
+	height: 32px;
+}
+div.author > div > div.content {
+	margin-left: 5px;
+}
+div.author > div > div.content > p.name > a {
+	color: #51a351;
+}
+div.author > div > div.content > p.datetime {
+	color: #666;
+	padding-top: 3px;
+	font-size: 11px;
+}
+
+div.task-content > h4 {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 5px;
+}
+div.task-content > p {
+	color: #666;
+}
+
+div.task-tags {
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+}
+div.task-tags > span {
+	background-color: #efefef;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin-right: 3px;	
+	color: #666;	
+	padding: 2px;
+	display: inline-block;
+}
+div.task-comment {
+	border: none;
+	margin-top: 0px;
+}
+div.task-comment > ul {
+	border-top: 1px solid #eee;
+}
+
+div.task-comment-form {
+	border: none;
+}
+div.task-comment-form > textarea {
+	width: 98%;
+	padding: 5px;
+	color: #666;
+	border: 1px solid #ddd;
+	resize: none;
+	height: 64px;
+	margin-bottom: 2px;
+}
+
+ul.task-stat {
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+}
+ul.task-stat > li {
+	float: left;
+	margin-right: 15px;
+}
+ul.task-stat > li > h4 {
+	color: #666;
+	font-size: 20px;
+}
+ul.task-stat > li > p {
+	color: #666;
+}
+ul.task-stat > li.overdue {
+	float: right;
+	color: #666;
+}
+ul.task-stat > li.overdue > img {
+	position: relative;
+	top: 2px;
+}
+ul.task-stat > li.overdue > p {
+	padding-top: 2px;
+	font-size: 14px;
+	text-align: right;
+}
+
+div.parent-project {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	color: #666;
+}
+div.parent-project > p > a {
+	color: #51a351;
+}
+div.parent-project > p > a:hover {
+	color: #080;
+}
+div.parent-project > p.project {
+	padding-left: 18px;
+}
+div.parent-project > p.content {
+	border: 1px solid #ddd;
+	background-color: #f1f1f1;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+div.task-activity {
+	padding: 10px;
+	padding-bottom: 0px;
+	color: #666;
+}
+div.task-activity > h3 {
+	padding-bottom: 5px;
 }
