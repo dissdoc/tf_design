@@ -1156,6 +1156,9 @@ ul.activity > li > div.message > p.datetime {
 	color: #999;
 	font-size: 10px;
 }
+ul.activity > li > div.message > p {
+	color: #666;
+}
 ul.activity > li > div.message > p.action > a {
 	color: #51a351;
 	text-decoration: underline;
@@ -1713,32 +1716,35 @@ div.task-comment-form > textarea {
 	margin-bottom: 2px;
 }
 
-ul.task-stat {
+div.task-stat {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+div.task-stat > ul {
 	list-style-type: none;
 	padding: 10px;
 	border-bottom: 1px solid #eee;
-	margin-bottom: 10px;
 }
-ul.task-stat > li {
+div.task-stat > ul > li {
 	float: left;
 	margin-right: 15px;
 }
-ul.task-stat > li > h4 {
+div.task-stat > ul > li > h4 {
 	color: #666;
 	font-size: 20px;
 }
-ul.task-stat > li > p {
+div.task-stat > ul > li > p {
 	color: #666;
 }
-ul.task-stat > li.overdue {
+div.task-stat > ul > li.overdue {
 	float: right;
 	color: #666;
 }
-ul.task-stat > li.overdue > img {
+div.task-stat > ul > li.overdue > img {
 	position: relative;
 	top: 2px;
 }
-ul.task-stat > li.overdue > p {
+div.task-stat > ul > li.overdue > p {
 	padding-top: 2px;
 	font-size: 14px;
 	text-align: right;
@@ -1773,4 +1779,48 @@ div.task-activity {
 }
 div.task-activity > h3 {
 	padding-bottom: 5px;
+}
+
+ul.breadcrumbs {
+	list-style-type: none;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #eee;	
+}
+ul.breadcrumbs > li {
+	float: left;	
+	padding: 5px;	
+	padding-bottom: 8px;	
+}
+ul.breadcrumbs > li:after {
+	content: url('/imgs/cross.png');
+	margin: 0px;
+	margin-right: -8px;
+	padding: 0px;
+}
+ul.breadcrumbs > li.end {
+	color: #666;
+	font-weight: bold;
+}
+ul.breadcrumbs > li > a {
+	color: #51a351;
+	text-decoration: none;
+	font-weight: bold;
+}
+ul.breadcrumbs > li > a:hover {
+	color: #080;
+}
+
+div.cut-task-list > ul.task-list {	
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+div.cut-task-list > ul.task-list > li {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+div.cut-task-list > ul.task-list > li > div.body {
+	margin-bottom: 0px;
+	border: none;
 }
