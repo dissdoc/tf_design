@@ -99,6 +99,12 @@ body {
 .delete {
 	background: url('/imgs/delete.png') no-repeat;
 }
+.private {
+	background: url('/imgs/private.png') no-repeat;
+}
+.public {
+	background: url('/imgs/public.png') no-repeat;
+}
 
 .error {
 	color: #b31519;
@@ -1306,6 +1312,21 @@ div.filter-panel > a.tag-more {
 	text-decoration: none;
 	color: #080;
 }
+div.filter-panel > div {
+	margin-bottom: 5px;
+}
+div.filter-panel > div > div.checkbox {
+	padding-top: 10px;
+	margin-right: 3px;
+}
+div.filter-panel > div > div.icon16-empty {
+	position: relative;
+	top: 6px;
+}
+div.filter-panel > div > div > span {
+	color: #999;
+	font-size: 12px;
+}
 div.filter-panel-empty {
 	border: none;
 }
@@ -1395,6 +1416,10 @@ div.create-task-form > div.descr > div.tags > ul > li > input[type=text] {
 }
 div.create-task-form > div.descr > div.more-for-task > div {
 	margin-right: 10px;
+}
+div.create-task-form > div.descr > div.more-for-task > div > span > img {
+	position: relative;
+	top: 3px;
 }
 div.create-task-form > div.descr > div.more-for-task > div > div.person {
 	background: url('/imgs/person_add.png') no-repeat;
@@ -1823,4 +1848,51 @@ div.cut-task-list > ul.task-list > li {
 div.cut-task-list > ul.task-list > li > div.body {
 	margin-bottom: 0px;
 	border: none;
+}
+
+ul.project-list {
+	list-style-type: none;
+	padding-top: 10px;
+}
+ul.project-list > li {
+	float: left;
+	width: 50%;	
+}
+ul.project-list > li > div.item {
+	margin: 5px;
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+ul.project-list > li > div.item > div.avatar {
+	float: left;
+}
+ul.project-list > li > div.item > div.avatar > img {
+	width: 64px;
+}
+ul.project-list > li > div.item > div.description {
+	padding-left: 70px;
+}
+ul.project-list > li > div.item > div.description > h4 {
+	color: #080;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+ul.project-list > li > div.item > div.description > p {
+	color: #444;	
+}
+ul.project-list > li > div.item > div.stat {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+ul.project-list > li > div.item > div.stat > div > span {
+	color: #666;
+	font-size: 11px;
+	margin-right: 3px;
+}
+ul.project-list > li > div.item > div.stat > div > span.status {
+	margin-right: 5px;
+}
+ul.project-list > li > div.item > div.stat > div > span > img {
+	position: relative;
+	top: 3px;	
 }
