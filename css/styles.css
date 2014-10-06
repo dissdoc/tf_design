@@ -452,6 +452,26 @@ ul.nav > li {
 	padding-bottom: 15px;
 	cursor: pointer;
 }
+
+ul.nav > li.subnav {
+	float: left;
+	padding: 0px;
+	cursor: pointer;	
+}
+ul.nav > li.subnav  > ul {
+	list-style-type: none;	
+}
+ul.nav > li.subnav  > ul > li {
+	float: left;
+	padding: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;	
+}
+ul.nav > li.subnav > ul > li:hover {
+	background-color: #f1f1f1;
+}
+
 ul.nav > li a {
 	text-decoration: none;
 	color: #666;
