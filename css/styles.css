@@ -1064,6 +1064,9 @@ ul.followers {
 	list-style-type: none;
 	margin-top: 10px;
 }
+div.content > ul.followers {
+	margin-top: -5px;
+}
 ul.followers > li {
 	float: left;
 	padding: 4px;
@@ -1921,4 +1924,56 @@ ul.project-list > li > div.item > div.stat > div > span.status {
 ul.project-list > li > div.item > div.stat > div > span > img {
 	position: relative;
 	top: 3px;	
+}
+
+div.item-project {
+}
+div.item-project > div.avatar {
+	float: left;
+}
+div.item-project > div.avatar > img {
+	width: 64px;
+}
+div.item-project > div.description {
+	padding-left: 70px;
+}
+div.item-project > div.description > h4 {
+	color: #080;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+div.item-project > div.description > p {
+	color: #444;	
+}
+div.item-project > div.task-stat {
+	margin-top: 5px;
+	border-top: 1px solid #f2f2f2;
+}
+div.item-project > div.task-stat > ul {
+	border: none;
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+ul.posts {
+	list-style-type: none;
+}
+ul.posts > li {
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+}
+ul.posts > li:hover {
+	cursor: pointer;
+	background-color: #fafafa;
+}
+ul.posts > li > h4 {
+	margin-bottom: 5px;	
+}
+ul.posts > li > p.description {
+	margin-bottom: 5px;
+}
+ul.posts > li > p.stat > span {
+	color: #999;
+	font-size: 11px;
 }
