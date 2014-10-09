@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
 
 	var flag = false,
 		x1 = -1, x2 = -1,
@@ -124,6 +124,10 @@ $(function() {
 		}
 	});
 
+});*/
+
+$(function() {
+	$('ul.nav > li.empty').contextmenu('init', {menu: 'ul.dropdown'});
 });
 
 // FLOT
@@ -131,8 +135,8 @@ $(function() {
 
 	var activities = [
 		{color: 3, data: [
-			[1395518400000, 0], 
-			[1395691200000, 10], 
+			[1395518400000, 0],
+			[1395691200000, 10],
 			[1395950400000,70],
 			[1396382400000, 8],
 			[1396814400000, 30],
